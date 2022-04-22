@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SGF</title>
+  <link rel="stylesheet" href="css/site/main.css">
+ </head>
+ <body>
+  <header>
+  <div id="logo" onclick="slowScroll('#top')">
+  <span>SGF</span>
+  </div>
+  <div id="about">
+  <a href="games.html" title="Игры">Игры</a>
+  <a href="mods.html" title="Модификации">Модификации</a>
+  <a href="blog.html" title="Блог">Блог</a>
+  </div>
+        <div id="mainlist">
+  <a href="#" title="О нас" onclick="slowScroll('#main')">О нас</a>
+  <a href="#" title="Пример игр" onclick="slowScroll('#overview')">Пример игр</a>
+  <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+  <a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">FAQ</a>
+		</div>
+  </header>
+  <div id="top">
+   <h1>Shit Games Factory</h1>
+   <h3>Будущее игровой индустрии!</h3>
+  </div>
+  <div id="main">
+   <div class="intro">
+   <h2>Наши игры - ваш кошмар наяву</h2>
+   </div>
+   <div class="text">
+   <span>Это худшее, что вы видели в своей жизни. Они создаются командой индусов без зарплаты, в пьяном угаре и на телефонах без интернета</span>
+   </div>
+  </div>
+  <div id="overview">
+  <h2>Наши игры</h2>
+  <h4>Они оставили коричневое пятно в истории</h4>
+    <div class="img">
+	<img src="https://images.ctfassets.net/rporu91m20dc/5X5iI8TGfSl8pamCqipnzJ/90a0fd353680ac503cfe7cef3d61ee46/F76_WastelandersTrailer1_3840x2160-02-8.png?w=1066&h=600&fit=thumb" alt="" width="460" height="250">
+	<span>Fallout 76</span>
+	</div>
+    <div class="img">
+	<img src="https://www.digiseller.ru/preview/748667/p1_2717144_684d263c.png" alt="" width="460" height="250">
+	<span>Fifa 20</span>
+	</div>
+  </div>
+  <div id="contacts">
+  <center><h5>Есть вопросы? Тогда пишите сюда!</h5></center>
+    <form id="form_input">
+      <label for="name">Имя <span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+	        <input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить (Отключено)</div>
+    </form>
+  </div>
+  <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Через Bitcoin, чтобы вы не смогли вернуть деньги</p>
+    </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>Мы продаем говно</p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Данная компания сертифицированна?</span>
+      <p>Ахаха, нет конечно.</p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+   function slowScroll(id) {
+   $('html, body').animate({
+   scrollTop: $(id).offset().top
+   }, 500);
+   }
+   
+   $(document).on("scroll", function () {
+    if($(window).scrollTop() === 0)
+    $("header").removeClass("fixed");
+    else
+    $("header").attr("class", "fixed");
+   });
+    </script>
+
+  
+  <h6>Shit Games Factory inc. Copyright 2020-2023</h6>
+ </body>
+</html>

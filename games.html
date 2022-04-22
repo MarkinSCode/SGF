@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SGF Games</title>
+  <link rel="stylesheet" href="css/games/main.css">
+ </head>
+ <body>
+  <header>
+  <div id="logo" onclick="javascript:location.href='site.html'">
+  <span>SGF</span>
+  </div>
+  <div id="about">
+  <a href="games.html" title="Игры">Игры</a>
+  <a href="mods.html" title="Модификации">Модификации</a>
+  <a href="blog.html" title="Блог">Блог</a>
+  </div>
+  </header>
+  <div id="top">
+   <h1>Игры Shit Games Factory</h1>
+   <h3>Купить нельзя</h3>
+  </div>
+  <div id="main">
+   <div class="intro">
+   <h2>Список наших игр</h2>
+   </div>
+   <div class="text">
+   <span>К сожалению список пуст</span>
+   </div>
+  </div>
+  <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Через Bitcoin, чтобы вы не смогли вернуть деньги</p>
+    </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>Мы продаем говно</p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Данная компания сертифицированна?</span>
+      <p>Ахаха, нет конечно.</p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+   function slowScroll(id) {
+   $('html, body').animate({
+   scrollTop: $(id).offset().top
+   }, 500);
+   }
+   
+   $(document).on("scroll", function () {
+    if($(window).scrollTop() === 0)
+    $("header").removeClass("fixed");
+    else
+    $("header").attr("class", "fixed");
+   });
+    </script>
+
+  
+  <h6>Shit Games Factory inc. Copyright 2020-2023</h6>
+ </body>
+</html>

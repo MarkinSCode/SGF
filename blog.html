@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SGF Mods</title>
+  <link rel="stylesheet" href="css/blog/main.css">
+ </head>
+ <body>
+  <header>
+  <div id="logo" onclick="javascript:location.href='index.html'">
+  <span>SGF</span>
+  </div>
+  <div id="about">
+  <a href="games.html" title="Игры">Игры</a>
+  <a href="mods.html" title="Модификации">Модификации</a>
+  <a href="blog.html" title="Блог">Блог</a>
+  </div>
+  </header>
+  <div id="top">
+   <h1>Блог Shit Games Factory</h1>
+   <h3>Не следите за нами</h3>
+  </div>
+  <div id="main">
+   <div class="intro">
+   <h2>Последние новости</h2>
+   </div>
+  </div>
+  <div id="faq">
+    <div>
+      <span class="title">MarkinS</span><br>
+      <span class="heading">18.04.2022</span>
+      <p>Лол, как я это откопал? Лютый говнокод.</p>
+      <span class="heading">27.07.2020</span>
+      <p>Отправил исходники в Discord.</p>
+      <span class="heading">20.07.2020</span>
+      <p>Сделана первая версия сайта. Доступна только главная страница SGF.</p>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+   function slowScroll(id) {
+   $('html, body').animate({
+   scrollTop: $(id).offset().top
+   }, 500);
+   }
+   
+   $(document).on("scroll", function () {
+    if($(window).scrollTop() === 0)
+    $("header").removeClass("fixed");
+    else
+    $("header").attr("class", "fixed");
+   });
+    </script>
+
+  
+  <h6>Shit Games Factory inc. Copyright 2020-2023 (Fake Edition)</h6>
+ </body>
+</html>
